@@ -1,0 +1,17 @@
+Kali-Linux
+
+# update or upgrade the system
+sudo apt update && sudo apt upgrade -y
+
+# start Android Studio
+flatpak run com.google.AndroidStudio
+
+# shutdown PC after XY
+sudo shutdown -h +60
+
+# shutdown interrupt
+sudo shutdown -c
+
+# shows the full path of the directory
+pwd
+
