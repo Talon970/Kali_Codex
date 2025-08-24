@@ -41,6 +41,12 @@ sudo systemctl status <service_name>
 # Enables a service to start on boot.
 sudo systemctl enable <service_name>
 
+# Change to TTY(Desktop without GUI). (you are getting logged out)
+STRG + ALT + F4
+
+# Change back to the GUI Desktop. (you have to loggin again)
+sudo systemctl restart lightdm
+
 ## 📘📘01_Navigation & File System (The Basics)📘📘
 
 ### pwd (Print Working Directory)
