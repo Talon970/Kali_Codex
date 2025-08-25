@@ -50,8 +50,11 @@ sudo systemctl restart lightdm
 # Find Desktop-Name
 xrandr --query
 
-# Set brightness (1.0 for full brightness)
+# Set brightness (external monitor: 1.0 for full brightness)
 xrandr --output HDMI-1 --brightness 0.7
+
+# Set brightness (Main monitore)
+xrandr --output eDP-1 --brightness 0.7
 
 ## 📘📘01_Navigation & File System (The Basics)📘📘
 
