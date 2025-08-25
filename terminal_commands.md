@@ -56,6 +56,10 @@ xrandr --output HDMI-1 --brightness 0.7
 # Set brightness (Main monitore)
 xrandr --output eDP-1 --brightness 0.7
 
+# Open the Nano Editor with the Setting to Shut down the Computer automaticly at a given time
+crontab -e
+0 19 * * 1-5 systemctl poweroff
+
 ## 📘📘01_Navigation & File System (The Basics)📘📘
 
 ### pwd (Print Working Directory)
