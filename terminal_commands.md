@@ -60,6 +60,24 @@ xrandr --output eDP-1 --brightness 0.7
 crontab -e
 0 19 * * 1-5 systemctl poweroff
 
+# Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
+
+# tell Ollama to get the ¨Gemma-Modul¨
+ollama pull codellama:7b-instruct
+
+# open server in Terminal(keep this terminal in the background)
+ollama serve
+
+# web use
+http://localhost:11434
+
+# use in vs code
+Strg+Umschalt+I
+
+# find process
+ps aux | grep <prozessname>
+
 ## 📘📘01_Navigation & File System (The Basics)📘📘
 
 ### pwd (Print Working Directory)
