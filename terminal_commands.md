@@ -102,13 +102,16 @@ contents:
 # open server in Terminal(keep this terminal in the background)
 ollama serve
 
+# open LLM in Terminal
+ollama run llama3.2:7b
+or
+ollama run starcoder2:3b
+
+# shows open process
 ps aux | grep ollama
 
 # web use
 http://localhost:11434
-
-# use in vs code
-Strg+Umschalt+I
 
 # find process
 ps aux | grep <prozessname>
