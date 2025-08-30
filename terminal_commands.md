@@ -60,14 +60,49 @@ xrandr --output eDP-1 --brightness 0.7
 crontab -e
 0 19 * * 1-5 systemctl poweroff
 
+# install extention Continue in VS Code
+
 # Install Ollama
 curl -fsSL https://ollama.com/install.sh | sh
 
-# tell Ollama to get the ¨Gemma-Modul¨
+# tell Ollama to get the ¨LLama Modul¨
 ollama pull codellama:7b-instruct
+
+# tell Ollama to get the ¨LLama Modul¨
+ollama pull starcoder2:3b
+
+# vs code config
+nano ~/.continue/config.json
+contents:
+
+{
+  "models": [
+    {
+      "title": "Llama 7B - General",
+      "provider": "ollama",
+      "model": "llama3.2:7b",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "StarCoder2 3B - Coding",
+      "provider": "ollama",
+      "model": "starcoder2:3b", 
+      "apiBase": "http://localhost:11434"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "StarCoder2 3B - Coding",
+    "provider": "ollama",
+    "model": "starcoder2:3b",
+    "apiBase": "http://localhost:11434"
+  }
+}
+
 
 # open server in Terminal(keep this terminal in the background)
 ollama serve
+
+ps aux | grep ollama
 
 # web use
 http://localhost:11434
