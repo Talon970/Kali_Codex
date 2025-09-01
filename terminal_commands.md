@@ -2,6 +2,23 @@
 
 ## 📘📘00_System Management (The Foundation)📘📘
 
+# Allgemeine Tipps:
+# Daily Shutdown
+sudo crontab -e
+
+dann NVIM auswhalen oder einen anderen editor deiner wahl und diese zeile einfugen:
+0 16 * * * /sbin/shutdown -h now
+
+mit:
+sudo crontab -l
+uberpr[fen ob es richtig ist es sollte genau der inhalt ausgegeben werden der eingefugt wurde + das was schon in der datei war, falls darin etwas war.
+
+# abbruch des Shutdowns fu diesen tag:
+sudo shutdown -c
+
+http://http.net
+um sich mit einem WLAN zu verbinden ist eine haufige URL.
+
 ### apt (Advanced Package Tool)
 # Updates the list of available packages. Do this first, always.
 sudo apt update
