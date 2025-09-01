@@ -6,7 +6,10 @@
 # Daily Shutdown
 sudo crontab -e
 
-dann NVIM auswhalen oder einen anderen editor deiner wahl und diese zeile einfugen:
+# zum nachschauen was dadrin steht
+sudo crontab -l
+
+# dann NVIM auswhalen oder einen anderen editor deiner wahl und diese zeile einfugen:
 0 16 * * * /sbin/shutdown -h now
 
 mit:
