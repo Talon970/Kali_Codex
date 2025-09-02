@@ -2,6 +2,14 @@
 
 ## 📘📘00_System Management (The Foundation)📘📘
 
+# first go in cd ~/Playground in all 3 terminals and open tehese 3 commands in the terminals just once ina terminal
+dev-up
+
+dev-shell
+
+dev-chat
+
+
 # Allgemeine Tipps:
 # Daily Shutdown
 sudo crontab -e
