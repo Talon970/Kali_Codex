@@ -9,6 +9,7 @@ dev-shell
 
 dev-chat
 
+dev-stop
 
 # Allgemeine Tipps:
 # Daily Shutdown
