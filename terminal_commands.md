@@ -2,6 +2,12 @@
 
 ## 📘📘00_System Management (The Foundation)📘📘
 
+nvim ~/.bashrc
+
+datei so andern wie gewollt und dann:
+source ~/.bashrc
+
+
 # first go in cd ~/Playground in all 3 terminals and open tehese 3 commands in the terminals just once ina terminal
 dev-up
 
