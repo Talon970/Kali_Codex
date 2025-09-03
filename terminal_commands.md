@@ -7,6 +7,10 @@ nvim ~/.bashrc
 datei so andern wie gewollt und dann:
 source ~/.bashrc
 
+docker images
+
+docker image prune
+
 
 # first go in cd ~/Playground in all 3 terminals and open tehese 3 commands in the terminals just once ina terminal
 dev-up
